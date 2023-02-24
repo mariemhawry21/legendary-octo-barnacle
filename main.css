@@ -1,0 +1,116 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkblue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--VeryLightGray);
+}
+header {
+display:flex;
+justify-content: center;
+align-items: center;  
+flex-direction: column;  
+padding: 50px;
+width: 36rem;
+margin: 0 auto;
+}
+header p:first-child{
+    font-size: 32px;
+    padding-bottom: 10px;
+    color: var(--GrayishBlue);
+}
+header p:last-child{
+    text-align: center;
+    padding-top: 10px;
+    color: var(--GrayishBlue);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col1{
+    background-color: white;
+    width:20rem;
+    height: 200px;
+    margin-right: 20px;
+    padding: 20px;
+    border-top: 5px solid var(--Cyan);
+    box-shadow: 5px 10px 10px  rgba(214, 217, 228, 0.333) ;
+
+}
+.col2{
+    flex-direction: column;
+}
+.col3{
+    background-color: white;
+    width:20rem;
+    height: 200px;
+    border-top: 5px solid var(--Blue);
+    box-shadow: 5px 10px 10px  rgba(214, 217, 228, 0.333) ;
+    margin-right: 20px;
+    padding: 20px;
+}
+.card1{
+    background-color: white;
+    margin-bottom: 20px;
+    height: 200px;
+    border-top: 5px solid var(--Red);
+    box-shadow: 5px 10px 10px  rgba(214, 217, 228, 0.333) ;
+width:20rem;
+margin-right: 20px;
+padding: 20px;
+
+}
+.card2{
+    background-color: white;
+    height: 200px;
+    border-top: 5px solid var(--Orange) ;
+    box-shadow: 5px 10px 10px  rgba(214, 217, 228, 0.333) ;
+    width:20rem;
+    margin-right: 20px;
+    padding: 20px;
+
+}
+p{
+    color:var(--VeryDarkblue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+h2{
+    font-weight: 600;
+}
+img{
+    width: 50px;
+    margin-left: 14rem;
+}
+@media(max-width:750px){
+    header{
+        flex-direction: column;
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+}
